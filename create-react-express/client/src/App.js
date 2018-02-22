@@ -6,6 +6,7 @@ import Register from "./pages/register/Register";
 import Account from "./pages/account/Account";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
+import Team from "./pages/team/Team";
 class App extends Component { 
   render() { 
     return (
@@ -15,5 +16,6 @@ class App extends Component {
   < Route exact path="/account" component={ Account } />
   < Route exact path="/home" component={ Home } />
   < Route exact path="/login" component={ Login } />
+  < Route exact path="/team" component={ Team } />
 </div>
     ); } } export default App;
