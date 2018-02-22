@@ -9,9 +9,9 @@ class Home extends Component {
         <nav className="navbar navbar-light bg-danger static-top" style={{height: "110px"}}>
         <div className="container">
             {/* <a href="home.html">
-                <img src="img/pssLogo.png" height="100px" class="center">
+                
             </a> */}
-            <Link to="/home"> Home </Link>
+            <Link to="/home"><img src="img/pssLogo.png" height="100px" className="center"/> Home </Link>
             <Link to="/mealPlan"> Meal Plan </Link>
             <Link to="/favorites"> Favorites </Link>
             <Link to="/account"> My Account </Link>
@@ -20,7 +20,7 @@ class Home extends Component {
     </nav>
     
     {/* // <!-- Masthead --> */}
-    
+   
     <div className="container">
         <div className="row">
             <div className="col-8">
@@ -109,7 +109,7 @@ class Home extends Component {
         </div>
     </footer>
     </div>
-            )    }
+            );    }
 
 }
 

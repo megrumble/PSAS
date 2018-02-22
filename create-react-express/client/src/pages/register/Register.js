@@ -114,7 +114,7 @@ this.setState({[e.target.name]: e.target.value});
 
                                 <p className="text-center">
                                     Already have an account?
-                                    <a href="index.html">Login Now</a>
+                                    <Link to="/login">Login Now</Link>
                                 </p>
                             </div>
                         </div>

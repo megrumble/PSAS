@@ -9,7 +9,7 @@ exports.signin = function (req, res) {
             if (isMatch) {
                 var token = jwt.sign({
                     userId: user.id
-                }, process.env.NAME);
+                }, process.env.SECRET || "Meg's Secret");
                 res.status(200).json({
                     userId: user.id,
                     username: user.username,
