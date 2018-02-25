@@ -62,6 +62,15 @@ this.setState({[e.target.name]: e.target.value});
         if(signIn){
         return (
             <div>
+                  <nav className="navbar navbar-light bg-danger static-top" style={{height: "110px"}}>
+        <div className="container">
+            <Link to="/home">
+                <img src="./img/pssLogo.png" alt="pssLogo" height="100px"/>
+            </Link>
+
+        </div>
+
+    </nav>
                    <section className="hero">
             <div className="container">
                 <div className="row">
@@ -69,7 +78,7 @@ this.setState({[e.target.name]: e.target.value});
                         <div className="card border-none">
                             <div className="card-body">
                                 <div className="mt-2 text-center">
-                                    <h2>Create Your Account</h2>
+                                    <h2 style={{color: "white"}}>Create Your Account</h2>
                                 </div>
                                 <p className="mt-4 text-white lead text-center">
                                     Sign up to get started with Prep Shop & Save!
@@ -112,8 +121,8 @@ this.setState({[e.target.name]: e.target.value});
                                     </p>
                                 </div>
 
-                                <p className="text-center">
-                                    Already have an account?
+                                <p className="text-center" style={{color: "white"}}>
+                                    Already have an account? &nbsp; &nbsp;
                                     <Link to="/login">Login Now</Link>
                                 </p>
                             </div>
@@ -122,8 +131,8 @@ this.setState({[e.target.name]: e.target.value});
                     <div className="clearfix"></div>
                     <div className="col-sm-12 mt-5 footer">
                         <p className="text-white small text-center">
-                            &copy; 2018 Prep Shop & Save &nbsp &nbsp | &nbsp &nbsp
-                            <Link to="/account"> Meet the Team </Link>
+                            &copy; 2018 Prep Shop & Save &nbsp; &nbsp; | &nbsp; &nbsp;
+                            <Link to="/team"> Meet the Team </Link>
                         </p>
                     </div>
                 </div>

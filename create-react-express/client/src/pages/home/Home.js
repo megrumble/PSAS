@@ -3,8 +3,51 @@ import {Link} from "react-router-dom";
 import "./home.css";
 
 class Home extends Component {
+    static defaultProps = {
+
+
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+    
+        };
+        this.onSubmit = this.onSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        // get our form data out of state
+        const { proteinChoice } = this.state;
+
+        // axios.post('/api/auth/signup', { proteinChoice })
+        //   .then((result) => {
+        //       // TODO
+        //       // Send to another page
+        //       this.props.history.push("/result");
+        //       console.log(result);
+        //   })
+        //   .catch(() => {
+        //     // TODO
+        //     // Error handling
+        //   });
+      }
+
+
+
+
+
+    handleChange(e){
+        e.preventDefault();
+        this.setState({[e.target.name]: e.target.value});
+        }
+          
     render() {
+        const { proteinChoice } = this.state;
         return(
+           
             <div>
         <nav className="navbar navbar-light bg-danger static-top" style={{height: "110px"}}>
         <div className="container">
@@ -18,8 +61,6 @@ class Home extends Component {
         </div>
     
     </nav>
-    
-    {/* // <!-- Masthead --> */}
    
     <div className="container">
         <div className="row">
@@ -36,7 +77,14 @@ class Home extends Component {
                                 <h3 className="card-title">Plan delicious meals in no time!</h3>
                                 <p className="card-text">What would you like to eat this week?</p>
                                 <form className="form-inline">
-                                    <input className="form-control mr-sm-2" id="proteinChoice" style={{width: "90%"}} type="search" placeholder="Ex: chicken, fish, etc..." aria-label="Search"/>
+                                    <input 
+                                    className="form-control mr-sm-2" 
+                                    name="proteinChoice"
+                                    value={proteinChoice} 
+                                    style={{width: "90%"}} 
+                                    placeholder="Ex: chicken, fish, etc..." 
+                                    aria-label="Search"
+                                    onChange={this.handleChange}/>
                                     <div className="input-group-addon">
                                         <i className="fa fa-search"></i>
                                     </div>

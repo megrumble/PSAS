@@ -18,6 +18,9 @@ body{
 .brand-logo{
     width: 120px;
 }
+h2{
+    color: white;
+}
 .hero{
     background-image: url('img/bg.jpg');
     background-size: cover;
@@ -163,4 +166,7 @@ a, a:hover{
 }
 .social-login .btn-github {
     background: #000000;
+}
+.navbar {
+    margin-bottom: 0;
 }

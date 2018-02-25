@@ -164,3 +164,6 @@ a, a:hover{
 .social-login .btn-github {
     background: #000000;
 }
+.navbar {
+    margin-bottom: 0;
+}

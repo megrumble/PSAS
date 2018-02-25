@@ -5,11 +5,11 @@ import {
 } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 ReactDOM.render(
     <Router>
     <App />
     </Router>,
     document.getElementById('root'));
-registerServiceWorker();
+

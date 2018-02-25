@@ -57,9 +57,19 @@ this.setState({[e.target.name]: e.target.value});
         if(signIn){
         return(
             <div>
+ <nav className="navbar navbar-light bg-danger static-top" style={{height: "110px"}}>
+        <div className="container">
+            <Link to="/home">
+                <img src="./img/pssLogo.png" alt="pssLogo" height="100px"/>
+            </Link>
 
-{/* <!--hero section--> */}
+        </div>
+
+    </nav>              
+
+
 <section className="hero">
+
 <div className="container">
     <div className="row">
         <div className="col-md-6 col-sm-8 mx-auto">
@@ -89,11 +99,11 @@ this.setState({[e.target.name]: e.target.value});
                                 placeholder="Enter password"
                                 onChange={this.handleChange} />
                             </div>
-                            <label className="custom-control custom-checkbox mt-2">
+                            {/* <label className="custom-control custom-checkbox mt-2">
                                 <input type="checkbox" className="custom-control-input"/>
                                 <span className="custom-control-indicator"></span>
                                 <span className="custom-control-description text-white">Keep me logged in</span>
-                            </label>
+                            </label> */}
                             <button type="submit" className="btn btn-warning float-right">Sign in</button>
                         </form>
                         <div className="clearfix"></div>
@@ -102,8 +112,8 @@ this.setState({[e.target.name]: e.target.value});
                         </p>
                     </div>
 
-                    <p className="text-center">
-                        Don't have an account yet?
+                    <p className="text-center" style={{color: "white"}}>
+                        Don't have an account yet?&nbsp; &nbsp;
                         <Link to="/register">Sign Up Now</Link>
                     </p>
                 </div>
@@ -112,7 +122,7 @@ this.setState({[e.target.name]: e.target.value});
         <div className="clearfix"></div>
         <div className="col-sm-12 mt-5 footer">
             <p className="text-white small text-center">
-                &copy; 2018 Prep Shop & Save &nbsp &nbsp | &nbsp &nbsp
+                &copy; 2018 Prep Shop & Save &nbsp; &nbsp; | &nbsp; &nbsp;
                 <Link to="/team">Meet the Team </Link>
 
             </p>
